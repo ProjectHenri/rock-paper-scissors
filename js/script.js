@@ -33,26 +33,3 @@ function playRound(playerSelection, computerSelection){
         return `You lose! ${computerSelection} beats ${pSelection}`;
     }
 }
-
-function game(){
-    for(i = 0; i<5; i++){
-        let playerSelection = prompt('Enter your choice', 'rock');
-        console.log(playRound(playerSelection, computerPlay()));
-    }
-    let outcome;
-    if(playerScore > computerScore){
-        outcome = 'You win the match!';
-    }else if(playerScore === computerScore){
-        outcome = 'The match is a tie!';
-    }else{
-        outcome = 'You lose the match!';
-    }
-    playerScore = 0; // Set player score to 0 after a game  
-    computerScore = 0; // Set computer score to 0 after a game
-    return outcome;
-}
-
-let playerScore = 0;
-let computerScore = 0;
-
-console.log(game());
