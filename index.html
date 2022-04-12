@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock, paper, scissors</title>
-    <script src="./js/script.js"></script>
+    <script src="./js/script.js" defer></script>
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
@@ -13,8 +13,16 @@
         <h1 class="title">Rock, paper, scissors</h1>
         <div class="buttonContainer">
             <button class="btn" id="rock">R</button>
-            <button class="btn" id="scissors">P</button>
+            <button class="btn" id="paper">P</button>
             <button class= "btn" id="scissors">S</button>
+        </div>
+        <div class="gameInfo">
+            <h2>Round result</h2>
+            <p id="roundResult">Pick an option to start playing. Game lasts for 5 rounds.</p>
+        </div>
+        <div class="score">
+            <p>YOU: <span id="player">0</span></p>
+            <p>COMPUTER: <span id="computer">0</span></p>
         </div>
     </div>
 </body>
